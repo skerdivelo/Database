@@ -24,3 +24,14 @@ ClearList();
 AddToList("Primo");
 AddToList("Secondo");
 AddToList("Terzo");
+
+//when the button addText is clicked save it in a variable
+let addText = document.getElementById("addText");
+addText.addEventListener("click", function(){
+    //save the value of the input in a variable
+    let text = document.getElementById("inputText").value;
+    //multiply the text by 10
+    let text10 = text*2;
+    //document.wirte the text10
+    document.write(text10);
+});
